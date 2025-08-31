@@ -167,3 +167,11 @@ switch (dayNumber) {
 //Aisi galtiyan nhi krni h
 //70 <= marks <= 80
 //marks >= 80 < 90
+
+/* 
+git status
+git add .
+git status
+git commit -m "a good message about this lecture"
+git push origin master
+*/

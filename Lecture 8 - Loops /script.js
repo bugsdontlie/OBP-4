@@ -190,12 +190,13 @@ const n1 = false && 5;
 const n2 = n1 === false && 34; //34
 const n3 = n2 && "67";
 const n4 = true && n2 == 34 && 45 && n1 == false; //H.W.
-
+//n2 = true && 34 --> n2 = 34;
+//n4 = true && true && 45 && true --> n4 = true?
 const n5 = (n1 == false && n2 == 34) || (n3 == false && n4 == true);
 
 console.log({n1, n2, n3, n4, n5});
 
-const condition = 1000;
+const condition = Number("23")*1;
 if(condition)
   console.log(condition + " is true");
 else 
