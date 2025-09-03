@@ -8,7 +8,7 @@ for(let i = 1; i <= N; i++){
 
 console.log({factorial});
 
-/* Check if N is prime or not */
+/* Check if N is prime or not - TC: O(N) */
 N = 117;
 let divisorsCount = 0;
 
@@ -19,6 +19,8 @@ for(let i = 1; i <= N; i++){
 
 const message = (divisorsCount > 2) ? "Non - prime number" : "Prime number";
 console.log(N + " is a " + message);
+
+
 
 /* ============== break keyword ============== */
 
