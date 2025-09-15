@@ -221,3 +221,16 @@ console.log(arr.includes(6)); //returns true as 6 is present
 console.log(arr.includes(17)); //returns false as 17 is not present
 
 /* find and update the value of element = 10 to 14 using indexOf() and includes() methods*/
+function updateValue(arr, oldValue, newValue) {
+  if (arr.includes(oldValue)) {
+    let oldValueIndex = arr.indexOf(oldValue);
+    arr[oldValueIndex] = newValue;
+    return true;
+  } else return false;
+}
+
+if (updateValue(arr, 10, 14)) {
+  console.log("Value has been updated");
+} else console.log("Value is not updated");
+
+console.log({ arr });
